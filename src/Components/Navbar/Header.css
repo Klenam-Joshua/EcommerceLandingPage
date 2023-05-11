@@ -1,0 +1,74 @@
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:2rem 0;
+}
+/*========== header menu and logo container style======*/
+.menu_logo-con{
+    display:flex;
+    gap:2rem;
+}
+
+.menu_logo-con  .humbarger{
+    display:none;
+}
+#icon-close{
+    display:none;
+}
+/*======navbar links style=====*/
+.menu_logo-con .nav-link{
+     margin-left:1rem;
+     font-size:0.9rem;
+     color:#747578;
+     display:inline-block;
+     position:relative;
+}
+.nav-link:hover .nav-link::after {
+   content: "";
+   width:100%;
+   height:0.3rem;
+   display:block;
+   background:red;
+   margin-top:2.3rem;
+   position:absolute;
+   
+
+}
+
+/*======cart icon and avatar container style===*/
+.cartIcon-avatar-container  {
+    display:inline-flex;
+    align-items: center;
+}
+
+.cartIcon-avatar-container  img{
+       width:calc(2vw + 1rem);
+       height:calc(2vw + 1rem);
+       border:2px solid transparent;  
+       border-radius: 50%;
+}
+.cartIcon-avatar-container  img:hover{
+    border-color: #fc8126;
+}
+.cartIcon-avatar-container #cart-icon{
+      margin-right:2rem;
+      cursor:pointer;
+}
+#itemsCount{
+     background:#fc8126;
+     padding:0.1rem  0.5rem;
+     border-radius:0.5rem;
+     font-size: 0.6rem;
+     color:white;
+     font-weight: 600;
+     top:-27%;
+}
+
+hr{
+    opacity:0.5;
+
+}
+
+
+/*======mobile view display =======*/

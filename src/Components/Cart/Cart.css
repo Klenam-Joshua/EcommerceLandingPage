@@ -1,0 +1,50 @@
+.cartContainer{
+      position:absolute;
+      width:30%;
+      background:white;
+      right:-3rem;
+      top:90%;
+      padding-bottom: 1rem;
+      z-index: 10;
+      box-shadow:1px 1px 10px rgb(221, 213, 213);
+      border-radius:0.5rem;
+}
+.cartContainer h4{
+      border-bottom:2px solid rgb(210, 201, 201);
+      padding:1rem;
+}
+#emptyCart{
+      padding: 4rem 0;
+}
+
+.row{
+      display:flex;
+      justify-content: space-between;
+      padding:0.5rem;
+      align-items: center;
+}
+.row  .img-con{
+      width:15%;
+
+}
+.img-con img{
+      width: 100%;
+      border-radius: 0.3rem;
+  
+}
+
+.checkout_btn_con button{
+      width:80%;
+      display:block;
+      margin-inline:auto;
+      padding: 0.7rem 3.4rem ;
+      color:white;
+      background:#ff7d1b;
+      border:none;
+      border-radius:0.3rem;
+      cursor: pointer;
+}
+
+.delete-icon{
+      cursor:pointer;
+}

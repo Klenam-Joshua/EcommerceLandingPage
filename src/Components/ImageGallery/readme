@@ -1,0 +1,19 @@
+/*=======algorithm for the gallery Component=========
+ 
+1. create a state the keep track of the counter(counter)
+cons[counter , setCounter]  = useState(0)
+let items = props.images
+  the initial value of the counter shoud be zero
+2.  when the addition button is clicked,
+   if(counter > items.length-1){
+        setCounter(0)
+   }
+   else{
+      setCounter(counter + 1)
+   }
+
+
+items[counter].url
+   
+*/
+

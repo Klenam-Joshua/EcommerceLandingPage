@@ -1,0 +1,120 @@
+/*==========image gallery style=========*/
+.collection-container{
+    margin-top:5rem;
+    display:grid;
+    grid-template-columns:repeat(2,1fr) ;
+    gap:0.3rem;
+    width:90%;
+    margin-inline:auto;
+}
+.collection-container  .gallery .activeImage{
+    width:74%;
+    margin:auto;
+    position:relative;
+}
+.collection-container  .gallery .activeImage img{
+         width:100%;
+         border-radius:1rem;
+         cursor:pointer;
+}
+.collection-container  .gallery .related-images{
+      display:grid;
+      width:74%;
+      grid-template-columns: repeat(4,1fr);
+      gap:1.2rem;
+      margin:auto;
+}
+ 
+
+.collection-container  .gallery .related-images img{
+     width:100%;
+     height:100%;
+     cursor:pointer;
+     border-radius:0.56rem;
+   
+}
+/*==========this style applies to the small images below the larger image======*/
+.collection-container  .gallery .related-images .items{
+    position:relative;
+    border:2px solid transparent ;
+    border-radius:0.7rem;
+}
+.collection-container  .gallery .related-images .active-image::before{
+       content:" ";
+       display:block;
+       position:absolute;
+       background:rgb(246, 236, 227,0.6);
+       width:100%; 
+       height:100%;
+       border-radius:0.7rem;  
+}
+
+ /* .items:hover  .items::before
+             
+{
+    content:" ";
+    display:block;
+    position:absolute;
+    background:rgb(246, 236, 227,0.6);
+    width:100%; 
+    height:100%;
+    border-radius:0.7rem; 
+} */
+.collection-container  .gallery .related-images .active-image{
+    border-color: #ff7d1b;
+}
+.navigation-buttons-con span{
+    display: none !important;
+}
+.description-container{
+    padding-top:3rem;
+}
+.discount{
+    padding-inline: 0.6rem;
+    background:#ffeedf;
+    color:#ff7d1b;
+    position:relative;
+    top:-0.3rem;
+    left:1rem;
+    border-radius:0.3rem;
+}
+.old-price{
+    display:block;
+    text-decoration:line-through;
+    color:#b9bcc6;
+}
+
+.add_to_cart{
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+.itemsCounter_button_con{
+        width:7rem;
+        background:#eff1f8;
+        display:flex;
+        justify-content: space-between;
+        border-radius:0.3rem;
+
+}
+.itemsCounter_button_con button ,.itemsCounter_button_con span{
+       width:30%;
+       text-align: center;
+       padding:0.3rem 0.2rem;
+       border:none;
+       background:none;
+       outline:none;
+}
+.add_to_cart_button_con button{
+    padding: 0.5rem 3.4rem ;
+    color:white;
+    background:#ff7d1b;
+    border:none;
+    border-radius:0.3rem;
+    cursor: pointer;
+}
+.add_to_cart_button_con button span:nth-child(2){
+     position:relative;
+     top:-0.2rem;
+}
+

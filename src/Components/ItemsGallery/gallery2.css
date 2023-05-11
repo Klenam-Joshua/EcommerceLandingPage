@@ -1,0 +1,83 @@
+.gallery-container{
+    position:fixed;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    bottom:0;
+    background:rgb(0, 0, 0,0.7);
+    z-index:10000;
+}
+
+.gallery2 {
+        position:relative;
+        top:50%;
+        transform: translateY(-50%);
+} 
+.gallery2   .related-images{
+    display: flex;
+    justify-content: center;
+}
+.gallery2  .activeImage{
+    width:32%;
+    margin:auto;
+    position:relative;
+}
+ 
+.gallery2  .activeImage img{
+    width:100%;
+    border-radius:1rem;
+}
+.gallery2  .related-images{
+     display:grid;
+      width:28%;
+      grid-template-columns: repeat(4,1fr);
+      gap:1.2rem;
+      margin-inline:auto;
+      margin-top:2rem;
+ 
+}
+
+
+.gallery2  .related-images img{
+width:100%;
+height:100%;
+cursor:pointer;
+border-radius:0.56rem;
+
+}
+/*==========this style applies to the smaller images below the larger image======*/
+.gallery2   .related-images .items{
+position:relative;
+border:2px solid transparent ;
+border-radius:0.7rem;
+}
+.gallery2   .related-images .active-image::before{
+  content:" ";
+  display:block;
+  position:absolute;
+  background:rgb(246, 236, 227,0.6);
+  width:100%; 
+  height:100%;
+  border-radius:0.7rem;  
+}
+.gallery2   .related-images .active-image{
+border-color: #ff7d1b;
+}
+
+.closeSvg svg {
+color:white;
+   
+}
+
+.gallery-container  #gallery2 .navigation-buttons-con span{
+    display: flex !important;
+}
+
+.closeSvg-con{
+    float:right;
+}
+.closeSvg-con svg:hover{
+    color:#ff7d1b;
+    cursor:pointer;
+}
